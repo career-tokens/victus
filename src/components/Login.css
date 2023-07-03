@@ -1,0 +1,6 @@
+.login{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;/**position:absolute not working but other elements will work*/
+}

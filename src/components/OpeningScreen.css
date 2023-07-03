@@ -1,4 +1,4 @@
-.main {
+.main1 {
     background-image: url("../../victus_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,6 +33,7 @@
   .lines{
     position:absolute;
     bottom:0;
+    padding-bottom: 17%;
   }
   
   .line {
@@ -42,8 +43,29 @@
   }
 
   .Name{
-    color: black;
-    font-size: 423%;
+    color: grey;
+    font-size: 10vh;
+  }
+
+  .name{
+    bottom: 0;
+    padding: 6%;
+    position: absolute;/** if u dont use position:absolute then the logo is getting pushed, it helps in removing 
+    the stuff out of normal workflow hence the logo is again centred*/
+    padding-bottom: 25%;
+  }
+
+  .btn{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4%;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 3%;
+    font-size: 3vh;
+    border-radius: 8%;
+    animation: fadeIn 2s forwards; 
   }
   
   @keyframes fadeIn {
