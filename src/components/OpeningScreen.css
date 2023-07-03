@@ -1,0 +1,57 @@
+.main {
+    background-image: url("../../victus_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+  .logo img{
+    width:45vw;
+    height:auto;
+    border-radius: 30%;
+  }
+  .logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+  }
+  /** carefully see the technique used above to center both vertically and horizontally an img element*/
+  .logo {
+    text-align: center;
+    flex-direction:column;
+  }
+  
+  .lines,.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+
+  .lines{
+    position:absolute;
+    bottom:0;
+  }
+  
+  .line {
+    color: white;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .Name{
+    color: black;
+    font-size: 423%;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
