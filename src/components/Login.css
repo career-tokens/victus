@@ -1,6 +1,55 @@
+.main2{
+    background-color:lightpink;
+}
 .login{
     justify-content: center;
     display: flex;
     align-items: center;
-    height: 100vh;/**position:absolute not working but other elements will work*/
+    height: 30vh;/**position:absolute not working but other elements will work*/
+    flex-direction: column;
 }
+.login-image{
+height: 70vh;
+justify-content: center;
+display: flex;
+align-items: center;
+background-image:url("../../dna.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+border-bottom-left-radius: 37%;
+border-bottom-right-radius: 37%;
+}
+
+.login-image img{
+width: 80vw;
+height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+border-radius: 17%;
+}
+.login-container{
+padding: 13% 13%;
+background-color:lavender ;
+border-radius: 58%;
+}
+.login h2{
+    color: white;
+font-size: 2vh;
+text-align: center;
+}
+/**
+margin: 0;
+padding: 0;
+text-align: center;
+margin-bottom: 0vh;
+display: none;
+position: absolute;
+z-index: 1;
+margin: auto;
+left: 42%;
+bottom: 16%;
+color: #7065E4;
+font-weight: bold;
+font-size: 2vh;*/

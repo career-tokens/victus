@@ -1,0 +1,13 @@
+.note{
+text-align: center;
+padding: 10vw;
+background-color: black;
+color: red;
+padding-top: 1vh;
+}
+.continue-button{
+background-color: white;
+padding: 2vw;
+border-radius: 14%;
+font-size: 4vw;
+}
