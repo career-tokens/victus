@@ -1,5 +1,7 @@
 import './App.css';
+import Home from './components/Home';
 import Login from './components/Login';
+import Note from './components/Note';
 import OpeningScreen from "./components/OpeningScreen";
 //import { BrowserRouter, Routes, Route } from "react-router-dom"; it works for v5 version the one which is used in
 //blogapp but in v6.4 stuff are diff
@@ -24,6 +26,14 @@ function App() {
         element={<Login/>}
         path="/login"
         />  
+      <Route
+        element={<Home/>}
+        path="/home"
+        /> 
+      <Route
+        element={<Note/>}
+        path="/note"
+        /> 
       </>  
     )
   );

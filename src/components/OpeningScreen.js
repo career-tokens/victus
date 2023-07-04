@@ -17,7 +17,7 @@ const OpeningScreen = () => {
         <p className="line">24x7</p>
         <p className="line">Changing lives for the better!</p>
         </div>
-        <button className="btn" onClick={()=>{navigate("/login")}}>Try for free!</button>
+        <button className="btn" onClick={()=>{navigate("/note")}}>Try for free!</button>
       </div>
     </div>
   );
