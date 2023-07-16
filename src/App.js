@@ -1,4 +1,5 @@
 import './App.css';
+import Disease from './components/Disease';
 import Home from './components/Home';
 import Login from './components/Login';
 import Note from './components/Note';
@@ -33,6 +34,10 @@ function App() {
       <Route
         element={<Note/>}
         path="/note"
+        /> 
+      <Route
+        element={<Disease/>}
+        path="/disease"
         /> 
       </>  
     )
