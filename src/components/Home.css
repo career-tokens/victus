@@ -1,0 +1,78 @@
+.navbar{
+height: 10vh;
+padding: 3vw;
+background: black;
+}
+
+.navbar-button1{
+justify-content: center;
+display: flex;
+margin-top: 3.3vh;
+padding: 2vw;
+position: absolute;
+background-color: white;
+border-radius: 1vw;
+}
+
+.navbar-button2{
+right: 0;
+position: absolute;
+margin-right: 3vw;
+justify-content: center;
+display: flex;
+margin-top: 3.3vh;
+padding: 2vw;
+background-color: white;
+border-radius: 1vw;
+}
+
+.container{
+text-align: center;
+}
+
+.centered-container{
+display: flex;
+align-items: center;
+flex-direction: column;
+height: 90vh;
+}
+
+.centered-text{
+width: 80vw;
+display: flex;
+justify-content: center;
+height: 25vh;
+padding: 2vw;
+font-size: 5vw;
+background-color: black;
+color: white;
+border-radius: 2vw;
+display: flex;
+flex-direction: column;
+}
+
+.p1{
+    font-size:2.6vh;
+}
+
+.p2{
+    font-size:2.3vh;
+}
+
+.container {
+    transition: transform 0.5s ease;
+  }
+  
+  .clicked {
+    transform: scale(1.1); /* Adjust the scale factor as per your preference */
+  }
+  
+  .centered-text {
+    transition: color 0.5s ease, background-color 0.5s ease;
+  }
+  
+  .centered-text.clicked {
+    color: black; /* Color change on click */
+    background-color: white; /* Background color change on click */
+  }
+  

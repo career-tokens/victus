@@ -13,7 +13,7 @@ const Login = () => {
   const handleGoogleLogin = (e) => {
     console.log(e);
     var decoded = jwt_decode(e.credential);
-    console.log(decoded);
+   // console.log(decoded);
     localStorage.setItem("user", decoded.name)
     navigate("/home");
   };
