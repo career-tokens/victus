@@ -2,36 +2,30 @@ import React, { useState, useEffect } from 'react';
 import '.././Diseases';
 import { Symptoms } from '.././Symptoms';
 import "./Disease.css"
+import { CloseButton } from '@chakra-ui/react'
+import { Button, ButtonGroup } from '@chakra-ui/react'
 
 const Disease = () => {
   const [selectedSymptoms, setSelectedSymptoms] = useState([]);
   const [filterText, setFilterText] = useState('');
   const [filteredSymptoms, setFilteredSymptoms] = useState([]);
+  const [isLoading, setIsLoading] = useState(false); // New state for loading button
 
   useEffect(() => {
     setFilteredSymptoms(filterSymptoms(Symptoms));
-  }, [filterText]);//make sure the dependency is there or on the change of input text , the dropdown array
-  //will not get updated and hence no re render 
-  
+  }, [filterText]);
 
   const filterSymptoms = (symptomsData) => {
     if (filterText === '') {
       return symptomsData;
     }
-  
     return symptomsData.filter((symptom) =>
       symptom.toLowerCase().startsWith(filterText.toLowerCase())
     );
   };
-   
 
   const handleInputChange = (e) => {
     setFilterText(e.target.value);
-    //setFilteredSymptoms(filterSymptoms(Symptoms));
-    //u cant place two state changes together since they get piled 
-    //here first filtertext executed and render dn but array not updated but on goin gback to null
-    // the piled down filtered symptoms get executed such that the req search array (like "barking cough",...)
-    //is shown so signs of piling up yet a prob since it should be simultaneous
   };
 
   const handleSymptomSelect = (selectedSymptom) => {
@@ -43,8 +37,6 @@ const Disease = () => {
       setSelectedSymptoms((prevSelectedSymptoms) => [...prevSelectedSymptoms, selectedSymptom]);
     }
   };
-  
-  
 
   const handleSymptomDeselect = (deselectedSymptom) => {
     setSelectedSymptoms((prevSelectedSymptoms) =>
@@ -52,34 +44,43 @@ const Disease = () => {
     );
   };
 
-  //see how the css checkbox is working
+  const handleSubmit = () => {
+    setIsLoading(true); // Start loading state
+
+    // Simulate an asynchronous operation
+    setTimeout(() => {
+      // Perform submission logic here
+
+      setIsLoading(false); // End loading state
+    }, 2000); // Simulating a 2-second delay before submission logic completes
+  };
 
   return (
     <div>
       <div className="middle">
-      <div class="inputbox">
-          <input  required="required" type="text"  value={filterText} onChange={handleInputChange} />
+        <div className="inputbox">
+          <input required="required" type="text" value={filterText} onChange={handleInputChange} />
           <span>Search Symptoms</span>
           <i></i>
-      </div>
+        </div>
         <div className="symptoms-list">
           {filteredSymptoms.map((symptom) => (
             <div className="check-symp">
-            <label class="container">
-            <input
-                type="checkbox"
-                checked={selectedSymptoms.includes(symptom)}
-                onChange={() => handleSymptomSelect(symptom)}
-              />
-            <div class="checkmark"></div>
-          </label>
-            <div
-              className="single"
-              key={symptom}
-              onClick={() => handleSymptomSelect(symptom)}
-              style={{ cursor: 'pointer' }}
-            >
-              {symptom}
+              <label className="container">
+                <input
+                  type="checkbox"
+                  checked={selectedSymptoms.includes(symptom)}
+                  onChange={() => handleSymptomSelect(symptom)}
+                />
+                <div className="checkmark"></div>
+              </label>
+              <div
+                className="single"
+                key={symptom}
+                onClick={() => handleSymptomSelect(symptom)}
+                style={{ cursor: 'pointer' }}
+              >
+                {symptom}
               </div>
             </div>
           ))}
@@ -89,13 +90,33 @@ const Disease = () => {
         {selectedSymptoms.length > 0 && (
           <div className="selec-symp">
             <button className="custom-btn btn-1">Selected Symptoms</button>
-            {selectedSymptoms.map((symptom) => (
-              <div key={symptom} onClick={() => handleSymptomDeselect(symptom)}>
-                {symptom}
-              </div>
-            ))}
+            <div className="selected">
+              {selectedSymptoms.map((symptom) => (
+                <div onClick={() => handleSymptomDeselect(symptom)}>
+                  <CloseButton size='lg' />
+                  <div
+                    className="single1"
+                    key={symptom}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    {symptom}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         )}
+      </div>
+      <div className="submit">
+        <Button
+          isLoading={isLoading} // Pass isLoading state to the button
+          loadingText='Submitting'
+          colorScheme='teal'
+          variant='outline'
+          onClick={handleSubmit} // Call handleSubmit function on button click
+        >
+          Submit
+        </Button>
       </div>
     </div>
   );

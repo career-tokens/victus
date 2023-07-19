@@ -5,7 +5,7 @@ background-color: black;
 color: red;
 padding-top: 1vh;
 }
-.continue-button{
+.continue-button,.Button{
 background-color: white;
 padding: 2vw;
 border-radius: 14%;

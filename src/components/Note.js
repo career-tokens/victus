@@ -1,6 +1,7 @@
 import React from 'react';
 import './Note.css';
 import { useNavigate } from "react-router-dom";
+import Button from '@mui/material/Button';
 
 const Note = () => {
     const navigate = useNavigate();
@@ -39,7 +40,14 @@ const Note = () => {
       <hr style={{ backgroundColor: 'white', height: '3px', border: 'none', margin: '20px 0' }} />
       
       <h2 style={{ color: 'white' }}>If it is not an emergency, you can continue:</h2>
-      <button className="continue-button" onClick={()=>{navigate("/login")}}>Continue</button>
+      <Button variant="contained"
+        onClick={() => {
+          setTimeout(() => {
+            navigate("/login");
+          }, 500);
+        }}        
+        sx={{backgroundColor: 'white', color: 'black'}}  
+      >Contained</Button>
     </div>
   );
 }
