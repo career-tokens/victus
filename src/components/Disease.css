@@ -152,11 +152,10 @@ margin-top:2vh;
   }
 
   .custom-btn {
-    width: 46vw;
+    width: 48vw;
     height: 6vh;
     color: #fff;
     border-radius: 5px;
-    padding: 10px 25px;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     background: transparent;
@@ -166,7 +165,7 @@ margin-top:2vh;
     display: inline-block;
     box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
-    font-size: 1.85vh;
+    font-size: 4vw;
     margin-top: 1vh;
    }
    
@@ -191,3 +190,91 @@ margin-top:2vh;
    .selec-symp{
     text-align:center;
    }
+
+   .single1{
+    margin-left: 10vw;
+    padding: 3vw 0;
+    background-color: black;
+    width: 80vw;
+    font-size:2vh;
+    margin-bottom: 3vh;
+    margin-top: -3vh;
+    color: white;
+  }
+
+  .css-6sdaxy {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: 1vw;
+      margin-right: 1vw;
+    margin-right: 4vw;
+    border-radius: 57%;
+    background-color: red;
+    color: white;
+    padding: 3.9vw;
+    position:relative;
+    z-index:1;
+  }
+
+  .selected{
+    height: 35vh;
+    overflow-y: auto;
+  }
+
+  .css-4xx2wk {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
+    outline: 11px solid #367bae00;
+    outline-offset: 2px;
+    font-size: 3vh;
+    padding: 1vh 5vw;
+    background-color: #478778;
+    border-solid: 27px green;
+    border: 2px solid white;
+    color: grren;
+    color: white;
+    border-radius: 3%;
+    margin-top: 1vh;
+  }
+
+  .submit{
+    text-align: center;
+    height: 9vh;
+    background-color: black;
+  }
