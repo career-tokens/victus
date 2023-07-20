@@ -47,7 +47,7 @@ const Note = () => {
           }, 500);
         }}        
         sx={{backgroundColor: 'white', color: 'black'}}  
-      >Contained</Button>
+      >Continue</Button>
     </div>
   );
 }
