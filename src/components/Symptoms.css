@@ -1,0 +1,289 @@
+.inputbox {
+    position: relative;
+    width: 50vw;
+    margin: auto;
+    padding-top: 5vh;
+  }
+  
+  .inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 2vh;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  
+  .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .inputbox input:valid ~span,
+  .inputbox input:focus ~span {
+    color: #45f3ff;
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0,75em;
+  }
+  
+  .inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+  }
+  
+  .inputbox input:valid ~i,
+  .inputbox input:focus ~i {
+    height: 44px;
+  }
+
+  .symptoms-list{
+max-height:35vh;
+overflow-y: auto;
+color: black;
+padding-top: 2vh;
+margin: auto;
+text-align: center;
+font-size: 2vh;
+margin-top:2vh;
+  }
+
+  .middle{
+    background-color:black;
+  }
+
+  .single{
+    margin-left: 10vw;
+    padding: 2vw 0;
+    background-color: white;
+    width: 80vw;
+    cursor: pointer;
+    margin-bottom: 2vh;
+    margin-top: -2vh;
+  }
+
+  /* Hide the default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    margin-left: 2vw;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 2.3em;
+    width: 2.3em;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: .4s;
+  }
+  
+  .checkmark:hover {
+    box-shadow: inset 17px 17px 16px #b3b3b3,
+              inset -17px -17px 16px #ffffff;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    box-shadow: none;
+    background-color: limegreen;
+    transform: rotateX(360deg);
+  }
+  
+  .container input:checked ~ .checkmark:hover {
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 0.96em;
+    top: 0.7em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    box-shadow: 0.1em 0.1em 0em 0 rgba(0,0,0,0.3);
+    transform: rotate(45deg);
+  }
+
+  .custom-btn {
+    width: 48vw;
+    height: 6vh;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    font-size: 4vw;
+    margin-top: 1vh;
+   }
+   
+   .btn-1 {
+    background: rgb(96,9,240);
+    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+    border: none;
+   }
+   
+   .btn-1:before {
+    height: 0%;
+    width: 2px;
+   }
+   
+   .btn-1:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                 -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+       inset -4px -4px 6px 0 rgba(255,255,255,.2),
+       inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+   }
+   
+   .selec-symp{
+    text-align:center;
+   }
+
+   .single1{
+    margin-left: 10vw;
+    padding: 3vw 0;
+    background-color: black;
+    width: 80vw;
+    font-size:2vh;
+    margin-bottom: 3vh;
+    margin-top: -3vh;
+    color: white;
+  }
+
+  .css-6sdaxy {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: 1vw;
+      margin-right: 1vw;
+    margin-right: 4vw;
+    border-radius: 57%;
+    background-color: red;
+    color: white;
+    padding: 3.9vw;
+    position:relative;
+    z-index:1;
+  }
+
+  .selected{
+    height: 35vh;
+    overflow-y: auto;
+  }
+
+  .css-4xx2wk {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
+    outline: 11px solid #367bae00;
+    outline-offset: 2px;
+    font-size: 3vh;
+    padding: 1vh 5vw;
+    background-color: #478778;
+    border-solid: 27px green;
+    border: 2px solid white;
+    color: grren;
+    color: white;
+    border-radius: 3%;
+    margin-top: 1vh;
+  }
+
+  .submit{
+    text-align: center;
+    height: 9vh;
+    background-color: black;
+  }
+
+  .sup-selec{
+    height:41vh;
+  }
+
+  .none{
+    margin-top: 13vh;
+    font-size: 2.5vh;
+  }

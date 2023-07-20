@@ -9,7 +9,7 @@ const Home = () => {
   const handleClick = () => {
     setIsClicked(true);
     setTimeout(() => {
-      navigate('/disease');
+      navigate('/symptoms');
     }, 500); 
   };
 
