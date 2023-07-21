@@ -12,9 +12,9 @@ const Home = () => {
       navigate('/symptoms');
     }, 500); 
   };
-
+ //making overflow hidden disallows any extra scrolling
   return (
-    <div>
+    <div style={{height:'100vh',overflow:'hidden'}}>
       <div className="navbar">
         <button className="navbar-button1">Home</button>
         <button className="navbar-button2" onClick={() => {

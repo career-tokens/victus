@@ -29,12 +29,13 @@
     letter-spacing: 00.05em;
     transition: 0.5s;
     pointer-events: none;
+    margin-top:-4vh
   }
   
   .inputbox input:valid ~span,
   .inputbox input:focus ~span {
     color: #45f3ff;
-    transform: translateX(-10px) translateY(-34px);
+    transform: translateX(-1vw) translateY(-6vh);
     font-size: 0,75em;
   }
   
@@ -43,7 +44,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px;
+    height: 0.4vh;
     background: #45f3ff;
     border-radius: 4px;
     transition: 0.5s;
@@ -53,7 +54,7 @@
   
   .inputbox input:valid ~i,
   .inputbox input:focus ~i {
-    height: 44px;
+    height: 6vh;
   }
 
   .symptoms-list{

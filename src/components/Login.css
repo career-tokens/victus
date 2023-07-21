@@ -1,5 +1,7 @@
 .main2{
     background-color:lightpink;
+    height:100vh;
+    overflow:hidden
 }
 .login{
     justify-content: center;
