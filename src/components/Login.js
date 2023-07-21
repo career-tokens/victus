@@ -8,7 +8,7 @@ import login_image from "../doctor.jpg"
 
 const Login = () => {
   const navigate = useNavigate();
-  console.log(process.env.REACT_APP_CLIENT_ID)
+  //console.log(process.env.REACT_APP_CLIENT_ID)
 
   const handleGoogleLogin = (e) => {
     console.log(e);
