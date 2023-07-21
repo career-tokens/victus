@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Diseases } from '../Diseases';
 import "./Disease.css"
+import { useNavigate } from 'react-router-dom';
 
 const Disease = () => {
+  const navigate = useNavigate();
   const location = useLocation();
   const { state: selectedSymptoms } = location;
     console.log(selectedSymptoms);//this is one way of sending data using navigate's state and useLocation
@@ -40,6 +42,9 @@ const Disease = () => {
             ) : (
               <div>No matching diseases found.</div>
             )}
+          </div>
+          <div className="home" onClick={()=>{navigate("/home")}}>
+            Go to Home
           </div>
         </div>
       );

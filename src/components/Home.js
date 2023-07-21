@@ -17,7 +17,10 @@ const Home = () => {
     <div>
       <div className="navbar">
         <button className="navbar-button1">Home</button>
-        <button className="navbar-button2">Logout</button>
+        <button className="navbar-button2" onClick={() => {
+          localStorage.removeItem('user');
+          navigate('/login');
+        }}>Logout</button>
       </div>
       <div className={`container`}>
         <div className="centered-container" onClick={handleClick}>
