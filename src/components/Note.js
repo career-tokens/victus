@@ -40,7 +40,7 @@ const Note = () => {
       <hr style={{ backgroundColor: 'white', height: '3px', border: 'none', margin: '20px 0' }} />
       
       <h2 style={{ color: 'white' }}>If it is not an emergency, you can continue:</h2>
-      <Button variant="contained"
+      <Button className="button" variant="contained"
         onClick={() => {
           setTimeout(() => {
             navigate("/login");
