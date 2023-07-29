@@ -55,3 +55,29 @@ bottom: 16%;
 color: #7065E4;
 font-weight: bold;
 font-size: 2vh;*/
+
+@media(min-width:600px){
+    .login-container {
+        padding: 8vh 10vw;
+        background-color: lavender;
+        border-radius: 58%;
+      }
+      .login h2{
+        font-size:3vh;
+      }
+      .login{
+        height:31vh;
+      }
+      .login-image img {
+        width: 28vw;
+        height: auto;
+      }
+      .login-image{
+        height:70vh;
+      }
+}
+@media(max-width:550px){
+    .p2{
+        margin-bottom:3vh;
+    }
+}

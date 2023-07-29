@@ -102,7 +102,7 @@ const Disease = () => {
           {selectedSymptoms.length > 0 && (
             <div className="selected">
               {selectedSymptoms.map((symptom) => (
-                <div onClick={() => handleSymptomDeselect(symptom)}>
+                <div  className="single2" onClick={() => handleSymptomDeselect(symptom)}>
                   <CloseButton size='lg' />
                   <div
                     className="single1"

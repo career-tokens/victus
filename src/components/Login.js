@@ -15,7 +15,7 @@ const Login = () => {
     var decoded = jwt_decode(e.credential);
    // console.log(decoded);
     localStorage.setItem("user", decoded.name)
-    navigate("/home");
+    navigate("/opening");
   };
 
   return (
@@ -25,7 +25,7 @@ const Login = () => {
       </div>
       <div className="login">
        <p><h2 style={{ color: "white" ,margin:"0",padding:"0"}}>Don't Worry . You are not alone.</h2></p> 
-        <p><h2 style={{ color: "#7065E4" ,margin:"0",padding:"0"}}>Click below to Login:</h2></p>
+        <p className="p2"><h2 style={{ color: "#7065E4" ,margin:"0",padding:"0"}}>Click below to Login:</h2></p>
         <div className="login-container">
         <GoogleOAuthProvider clientId={process.env.REACT_APP_CLIENT_ID}>
             <GoogleLogin

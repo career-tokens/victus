@@ -30,11 +30,7 @@
     animation: fadeIn 2s forwards;
   }
 
-  .lines{
-    position:absolute;
-    bottom:0;
-    padding-bottom: 17%;
-  }
+
   
   .line {
     color: white;
@@ -47,26 +43,9 @@
     font-size: 10vh;
   }
 
-  .name{
-    bottom: 0;
-    padding: 6%;
-    position: absolute;/** if u dont use position:absolute then the logo is getting pushed, it helps in removing 
-    the stuff out of normal workflow hence the logo is again centred*/
-    padding-bottom: 25%;
-  }
 
-  .btn{
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 4%;
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 3%;
-    font-size: 3vh;
-    border-radius: 8%;
-    animation: fadeIn 2s forwards; 
-  }
+
+
   
   @keyframes fadeIn {
     from {
@@ -74,6 +53,53 @@
     }
     to {
       opacity: 1;
+    }
+  }
+  @media (max-width:550px){
+    .btn{
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 4%;
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 3%;
+      font-size: 3vh;
+      border-radius: 8%;
+      animation: fadeIn 2s forwards; 
+    }
+    .name{
+      bottom: 0;
+      padding: 6%;
+      position: absolute;/** if u dont use position:absolute then the logo is getting pushed, it helps in removing 
+      the stuff out of normal workflow hence the logo is again centred*/
+      padding-bottom: 22vh;
+    }
+    .lines{
+      position:absolute;
+      bottom:0;
+      padding-bottom: 17%;
+    }
+  }
+
+  @media (min-width: 600px){
+    .logo img{
+      width: 25vw;
+      height: auto;
+      border-radius: 30%;
+      margin-top: 6vh;
+    }
+    .lines{
+      padding-bottom: 2vh;
+    }
+    .btn{
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 2vh;
+      font-size: 3vh;
+      border-radius: 8%;
+      animation: fadeIn 2s forwards;
     }
   }
   

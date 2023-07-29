@@ -43,7 +43,7 @@ const Disease = () => {
               <div>No matching diseases found.</div>
             )}
           </div>
-          <div className="home" onClick={()=>{navigate("/home")}}>
+          <div className="home" onClick={()=>{navigate("/opening")}}>
             Go to Home
           </div>
         </div>

@@ -287,3 +287,51 @@ margin-top:2vh;
     margin-top: 13vh;
     font-size: 2.5vh;
   }
+
+  @media(min-width:600px){
+    .inputbox input{
+      font-size:3vh;
+    }
+    .symptoms-list{
+      height: 35vh;
+      overflow-y: auto;
+      color: black;
+      padding-top: 1vh;
+      margin: auto;
+      text-align: center;
+      font-size: 3vh;
+      margin-top: 2vh;
+    }
+    .check-symp{
+      margin-left:12vw;
+    }
+    .single{
+      width:60vw;
+    }
+    .custom-btn{
+      height:8vh;
+      width: 374px;
+      font-size: 4vh;
+    }
+    .css-6sdaxy{
+      padding:2.2vh;
+    }
+    .single2{
+      margin-left:12.5vw;
+    }
+    .single1 {
+      margin-left: 9vw;
+      padding: 2.5vw 0;
+      width: 60vw;
+      font-size: 3vh;
+    }
+    .selec-symp{
+      height:41vh;
+    }
+    .selected {
+      height: 30vh;
+      overflow-y: auto;
+      margin-top: 2vh;
+      margin-left: 0.5vw;
+    }
+  }

@@ -11,3 +11,17 @@ padding: 2vw;
 border-radius: 14%;
 font-size: 4vw;
 }
+@media (min-width: 600px){
+    .note{
+text-align: center;
+background-color: black;
+color: red;
+width: 100vw;
+height: 100vh;
+padding: 8vw;
+font-size: 2.5vh;
+    }
+    .button{
+        margin-top:3vh;
+    }
+}
