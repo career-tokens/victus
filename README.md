@@ -5,6 +5,9 @@ It is a web-app where you can access medical facilities . For the time being , i
 
 
 ## Screenshots:
+![image](https://github.com/career-tokens/victus/assets/134730030/c98626a3-a3e5-4492-b077-7e512f96a49c)
+
+
 ## Tech Stack used:
 React , Chakra UI , Material UI , Google OAuth 
 ## Features:
