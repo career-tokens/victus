@@ -22,4 +22,13 @@ i)currently it gives only one service\
 ii)data may not be too accurate\
 iii)its mainly built for mobile users
 ## Video of the project:
+## Mobile Version:
 [2023-07-21 13-50-28.webm](https://github.com/mainakkaniam/victus/assets/117885693/d12147ed-e95d-431f-9a53-a4ef0f4bd8f2)
+
+## Desktop Version:
+The quality is bit down since I had to compress it.
+
+
+https://github.com/career-tokens/victus/assets/134730030/c61940cf-9eb5-4e4a-a82c-86258ba8dc83
+
+
