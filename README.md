@@ -3,6 +3,8 @@
 
 It is a web-app where you can access medical facilities . For the time being , it provides only one service-Disease prediction. You just need to select your symptoms and the app will give you a list of probable diseases.
 
+## App Link:
+[victus-mainakkaniam.vercel.app](https://victus-mainakkaniam.vercel.app/)
 
 ## Screenshots:
 ![image](https://github.com/career-tokens/victus/assets/134730030/c98626a3-a3e5-4492-b077-7e512f96a49c)
